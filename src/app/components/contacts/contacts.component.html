@@ -1,0 +1,5 @@
+<div *ngIf="contacts$ | async as contacts">
+  <section *ngFor="let contact of contacts">
+    <div>{{ contact.name }}</div>
+  </section>
+</div>
